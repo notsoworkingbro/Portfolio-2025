@@ -30,6 +30,13 @@ const projects = [
     image: "https://via.placeholder.com/400x250",
     link: "#",
   },
+  {
+    title: "MALAYAN ESPORTS",
+    description: "Low poly objects",
+    tech: ["Blender"],
+    image: "https://via.placeholder.com/400x250",
+    link: "#",
+  },
 ];
 
 const Projects: React.FC = () => {
