@@ -9,34 +9,6 @@ const projects = [
     image: "https://via.placeholder.com/400x250",
     link: "#",
   },
-  {
-    title: "E-Commerce Store",
-    description: "An online shop with cart and payment features.",
-    tech: ["Next.js", "Stripe", "MongoDB"],
-    image: "https://via.placeholder.com/400x250",
-    link: "#",
-  },
-  {
-    title: "Game Development",
-    description: "A 2D platformer built in Unity with C# scripting.",
-    tech: ["Unity", "C#"],
-    image: "https://via.placeholder.com/400x250",
-    link: "#",
-  },
-  {
-    title: "3D Modeling",
-    description: "Low poly objects",
-    tech: ["Blender"],
-    image: "https://via.placeholder.com/400x250",
-    link: "#",
-  },
-  {
-    title: "MALAYAN ESPORTS",
-    description: "Low poly objects",
-    tech: ["Blender"],
-    image: "https://via.placeholder.com/400x250",
-    link: "#",
-  },
 ];
 
 const Projects: React.FC = () => {
