@@ -9,6 +9,13 @@ const projects = [
     image: "https://via.placeholder.com/400x250",
     link: "#",
   },
+  {
+    title: "3D Modeling",
+    description: "A personal website showcasing my skills and projects.",
+    tech: ["Blender"],
+    image: "https://via.placeholder.com/400x250",
+    link: "#",
+  },
 ];
 
 const Projects: React.FC = () => {
