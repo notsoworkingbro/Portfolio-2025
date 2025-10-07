@@ -1,22 +1,31 @@
-// Projects.tsx
 import React from "react";
+import Image from "next/image";
 
 const projects = [
   {
     title: "Portfolio Website",
     description: "A personal website showcasing my skills and projects.",
     tech: ["React", "TailwindCSS"],
-    image: "https://via.placeholder.com/400x250",
+    image: "/images/portfolio.png",
     link: "#",
   },
   {
     title: "3D Modeling",
-    description: "A personal website showcasing my skills and projects.",
+    description: "3D modeling work using Blender.",
     tech: ["Blender"],
-    image: "https://via.placeholder.com/400x250",
+    image: "/images/modeling.png",
     link: "#",
   },
 ];
+
+//  Define colors for each technology
+const techColors: Record<string, string> = {
+  React: "bg-sky-100 text-sky-700 dark:bg-sky-800 dark:text-sky-200",
+  TailwindCSS: "bg-teal-100 text-teal-700 dark:bg-teal-800 dark:text-teal-200",
+  Blender: "bg-orange-100 text-orange-700 dark:bg-orange-800 dark:text-orange-200",
+  NextJS: "bg-gray-200 text-gray-900 dark:bg-gray-700 dark:text-white",
+  TypeScript: "bg-blue-100 text-blue-700 dark:bg-blue-800 dark:text-blue-200",
+};
 
 const Projects: React.FC = () => {
   return (
@@ -32,11 +41,15 @@ const Projects: React.FC = () => {
               key={index}
               className="bg-white dark:bg-gray-800 rounded-2xl shadow-lg overflow-hidden hover:scale-105 transition-transform duration-300"
             >
-              <img
-                src={project.image}
-                alt={project.title}
-                className="w-full h-48 object-cover"
-              />
+              <div className="relative w-full h-48">
+                <Image
+                  src={project.image}
+                  alt={project.title}
+                  fill
+                  className="object-cover"
+                />
+              </div>
+
               <div className="p-6">
                 <h3 className="text-2xl font-semibold text-gray-800 dark:text-white">
                   {project.title}
@@ -45,11 +58,14 @@ const Projects: React.FC = () => {
                   {project.description}
                 </p>
 
+                {/* 🎨 Tech tags with unique colors */}
                 <div className="flex flex-wrap gap-2 mt-4">
                   {project.tech.map((t, i) => (
                     <span
                       key={i}
-                      className="text-sm bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-200 px-3 py-1 rounded-full"
+                      className={`text-sm px-3 py-1 rounded-full font-medium ${
+                        techColors[t] || "bg-gray-200 text-gray-800 dark:bg-gray-700 dark:text-gray-200"
+                      }`}
                     >
                       {t}
                     </span>

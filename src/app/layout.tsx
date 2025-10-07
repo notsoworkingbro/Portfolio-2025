@@ -1,12 +1,10 @@
+"use client"
+
 import "./globals.css";
-import type { Metadata } from "next";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 
-export const metadata: Metadata = {
-  title: "My Portfolio",
-  description: "Showcasing my work and projects",
-};
+import { ThemeProvider } from "next-themes";
 
 export default function RootLayout({
   children,
@@ -17,7 +15,11 @@ export default function RootLayout({
     <html lang="en">
       <body className="bg-background text-foreground">
         <Navbar />
-        <main className="min-h-screen">{children}</main>
+        <main className="min-h-screen">
+          <ThemeProvider attribute="class">
+            {children}
+          </ThemeProvider>
+        </main>
         <Footer />
       </body>
     </html>
