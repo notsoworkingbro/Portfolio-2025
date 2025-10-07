@@ -8,7 +8,7 @@ export default function Navbar() {
     <nav className="flex justify-between items-center px-8 py-4 shadow-md bg-white dark:bg-neutral-900 transition-colors duration-300">
       {/* Logo / Title */}
       <h1 className="text-xl font-bold text-gray-800 dark:text-white">
-        MyPortfolio
+        Dale Parocha
       </h1>
 
       {/* Navigation Links + Theme Toggle */}
