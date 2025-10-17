@@ -16,7 +16,7 @@ export default function LogoMarquee() {
   return <main className="py-8">
     <div className="absolute left-0 flex gap-4">
       {[...images].map((item, idx) => (
-        <Cardlogos key={item}/>
+        <Cardlogos image={item} key={idx}/>
       ))}
     </div>
   </main>

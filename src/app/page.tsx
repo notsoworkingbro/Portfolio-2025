@@ -1,6 +1,7 @@
 import Hero from "./components/Hero";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
+import LogoMarquee from "@/components/LogoMarquee";
 
 
 export default function Home() {
@@ -10,7 +11,7 @@ export default function Home() {
     <>
       <Hero />
       <Projects />
-
+      <LogoMarquee />
       <Contact />
     </>
   );
