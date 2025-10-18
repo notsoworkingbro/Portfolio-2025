@@ -54,9 +54,9 @@ export default function LogoMarquee() {
     return controls.stop;
   }, [xTranslation, width, duration, rerender]);
 
-  return <main className="py-8">
+  return <main className="py-2 overflow-hidden">
     <motion.div 
-      className="absolute left-0 flex gap-4" 
+      className="left-0 flex gap-4 " 
     
       ref={ref}
       style = {{ x:xTranslation }}
