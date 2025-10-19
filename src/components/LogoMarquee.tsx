@@ -6,14 +6,22 @@ import { useState, useEffect } from "react";
 import useMeasure from "react-use-measure";
 
 export default function LogoMarquee() {
-  const images = [
-    "/logos/c-sharp-16-svgrepo-com.svg",
-    "/logos/code-svgrepo-com.svg",
-    "/logos/github-svgrepo-com.svg",
-    "/logos/go-16-svgrepo-com.svg",
-    "/logos/javascript-155-svgrepo-com.svg",
-    "/logos/nodejs02-svgrepo-com.svg",
-    "/logos/python-127-svgrepo-com.svg",
+  const logos = [
+    { image: "/logos/c-sharp-16-svgrepo-com.svg", name: "C#" },
+    { image: "/logos/code-svgrepo-com.svg", name: "VS Code" },
+    { image: "/logos/github-svgrepo-com.svg", name: "GitHub" },
+    { image: "/logos/go-16-svgrepo-com.svg", name: "Go" },
+    { image: "/logos/javascript-155-svgrepo-com.svg", name: "JavaScript" },
+    { image: "/logos/nodejs02-svgrepo-com.svg", name: "Node.js" },
+    { image: "/logos/python-127-svgrepo-com.svg", name: "Python" },
+    
+    { image: "/logos/c-sharp-16-svgrepo-com.svg", name: "C#" },
+    { image: "/logos/code-svgrepo-com.svg", name: "VS Code" },
+    { image: "/logos/github-svgrepo-com.svg", name: "GitHub" },
+    { image: "/logos/go-16-svgrepo-com.svg", name: "Go" },
+    { image: "/logos/javascript-155-svgrepo-com.svg", name: "JavaScript" },
+    { image: "/logos/nodejs02-svgrepo-com.svg", name: "Node.js" },
+    { image: "/logos/python-127-svgrepo-com.svg", name: "Python" },
   ];
 
   const FAST_DURATION = 25;
@@ -54,7 +62,7 @@ export default function LogoMarquee() {
     return controls.stop;
   }, [xTranslation, width, duration, rerender]);
 
-  return <main className="py-2 overflow-hidden">
+  return <main className="py-2 overflow-hidden bg-white">
     <motion.div 
       className="left-0 flex gap-4 " 
     
@@ -68,8 +76,8 @@ export default function LogoMarquee() {
         setMustFinish(true);
         setDuration(FAST_DURATION)}}
       >
-      {[...images, ...images].map((item, idx) => (
-        <Cardlogos image={item} key={idx}/>
+      {[...logos, ...logos].map((logo, idx) => (
+        <Cardlogos image={logo.image} name={logo.name} key={idx} />
       ))}
     </motion.div>
   </main>
