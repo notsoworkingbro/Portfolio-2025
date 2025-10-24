@@ -46,28 +46,6 @@ export default function Contact() {
           <Github className="w-5 h-5" />
           <span>GitHub</span>
         </a>
-
-        {/* Twitter */}
-        <a
-          href="https://twitter.com/your-twitter"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="flex items-center gap-2 px-5 py-3 bg-white dark:bg-gray-800 rounded-xl shadow hover:shadow-lg hover:bg-blue-500 hover:text-white transition-all"
-        >
-          <Twitter className="w-5 h-5" />
-          <span>Twitter</span>
-        </a>
-
-        {/* Portfolio / Website */}
-        <a
-          href="https://yourwebsite.com"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="flex items-center gap-2 px-5 py-3 bg-white dark:bg-gray-800 rounded-xl shadow hover:shadow-lg hover:bg-green-600 hover:text-white transition-all"
-        >
-          <Globe className="w-5 h-5" />
-          <span>Website</span>
-        </a>
       </div>
     </section>
   );
