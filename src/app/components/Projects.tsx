@@ -16,6 +16,13 @@ const projects = [
     image: "/images/modeling.png",
     link: "#",
   },
+  {
+    title: "Expense Tracker",
+    description: "Tracks Expenses built in MERN framework .",
+    tech: ["React", "TailwindCSS"],
+    image: "/images/portfolio.png",
+    link: "#",
+  },
 ];
 
 //  Define colors for each technology

@@ -27,7 +27,7 @@ export default function Contact() {
 
         {/* LinkedIn */}
         <a
-          href="https://www.linkedin.com/in/your-linkedin"
+          href="https://www.linkedin.com/in/dale-parocha-9a2655333/"
           target="_blank"
           rel="noopener noreferrer"
           className="flex items-center gap-2 px-5 py-3 bg-white dark:bg-gray-800 rounded-xl shadow hover:shadow-lg hover:bg-blue-600 hover:text-white transition-all"
@@ -38,7 +38,7 @@ export default function Contact() {
 
         {/* GitHub */}
         <a
-          href="https://github.com/your-github"
+          href="https://github.com/notsoworkingbro"
           target="_blank"
           rel="noopener noreferrer"
           className="flex items-center gap-2 px-5 py-3 bg-white dark:bg-gray-800 rounded-xl shadow hover:shadow-lg hover:bg-gray-700 hover:text-white transition-all"

@@ -22,6 +22,14 @@ export default function LogoMarquee() {
     { image: "/logos/javascript-155-svgrepo-com.svg", name: "JavaScript" },
     { image: "/logos/nodejs02-svgrepo-com.svg", name: "Node.js" },
     { image: "/logos/python-127-svgrepo-com.svg", name: "Python" },
+
+    { image: "/logos/c-sharp-16-svgrepo-com.svg", name: "C#" },
+    { image: "/logos/code-svgrepo-com.svg", name: "VS Code" },
+    { image: "/logos/github-svgrepo-com.svg", name: "GitHub" },
+    { image: "/logos/go-16-svgrepo-com.svg", name: "Go" },
+    { image: "/logos/javascript-155-svgrepo-com.svg", name: "JavaScript" },
+    { image: "/logos/nodejs02-svgrepo-com.svg", name: "Node.js" },
+    { image: "/logos/python-127-svgrepo-com.svg", name: "Python" },
   ];
 
   const FAST_DURATION = 25;
